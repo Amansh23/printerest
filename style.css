@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 200vh;
+
+    border-top: 1px solid transparent;
+}
+#main #bar{
+    width: 100%;
+    height: 3px;
+    margin-top: 3px;
+    background-color: white;
+    display: flex;
+}
+#main #bar .b1{
+    width: 0;
+    opacity: 1;
+    height: initial;
+    background-color: black;
+}
+#main #nav{
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: 10px;
+    /* background-color: hotpink; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#main #nav #n1{
+    width: 5%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: red;
+    font-size: 25px;
+}
+#main #nav #n2{
+    width: 5%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: black;
+}
+#main #nav #n2 a{
+    text-decoration: none;
+    font-family: gilroy extrabold;
+    color: white;
+}
+#main #nav #n2:hover{
+    font-size: 18px;
+    width: 5.5%;
+    letter-spacing: 1px;
+}
+#main #nav #n3{
+    width: 5%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 15px;
+}
+#main #nav #n3 a{
+    text-decoration: none;
+    font-family: gilroy extrabold;
+    color: black;
+}
+#main #nav #n3:hover{
+    font-size: 18px;
+    letter-spacing: 1px;
+    
+}
+#main #nav #n4{
+    width: 50%;
+    height: 6vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding: 10px;
+    color: grey;
+    background-color: rgb(238, 229, 229);
+}
+#main #nav #n4 h3{
+    font-family: gilroy;
+    color: grey;
+    font-size: 15px;
+   margin-left: 10px;
+}
+#main #nav #n5{
+    width: 3%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: grey;
+    font-size: 25px;
+}
+#main #nav #n6{
+    width: 3%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: grey;
+    font-size: 25px;
+}
+#main #nav #n7{
+    width: 3%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(206, 200, 200);
+    color: grey;
+    font-family: gilroy light;
+    border: 1px solid white;
+}
+#main #nav #n8{
+    width: 3%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: grey; 
+    
+    font-size: 25px;
+}
+#main #cardss{
+    /* width: 240px;
+    height: 340px; */
+    /* background-color: royalblue; */
+    margin-top: 100px;
+    margin-left: 40px;
+    border-radius: 20px;
+    /* position: relative; */
+    
+    /* overflow: auto; */
+   /* white-space: nowrap; */
+}
+#main #cardss #cards{
+    width: 240px;
+    height: 340px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 5;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#main #cardss #cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}
+/* #main #cards #card:hover{
+    /* display: initial; */
+/* } */
+#main #cardss #cards #card:hover{
+     opacity: 0.5;
+}
+#main #cardss #cards #card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(134, 133, 133);
+    opacity: 0;
+    z-index: 4;
+    top: 0;
+    /* display: inline-block; */
+
+}
+#main #cardss #cards #card .save{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    font-family: gilroy;
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main #cards #card .save a{
+    text-decoration: none;
+    color: white;
+}
+#main #cards #card .circle{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    font-family: gilroy;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media(max-width:400px){
+   #main #nav #n2{
+        display: none;
+    }
+    #main #nav #n5{
+        display: none;
+    }
+    #main #nav #n7{
+        display: none;
+    }
+}
